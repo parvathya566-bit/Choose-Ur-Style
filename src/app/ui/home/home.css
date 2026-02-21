@@ -1,0 +1,234 @@
+*{
+  font-family: 'Playfair Display', serif;
+}
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #ffffff;
+  color: #000;
+}
+
+h1, h2, .navbar-brand {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.navbar {
+  padding: 25px 60px;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.nav-link {
+  margin-left: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  background-color: #8b6f3d;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hero {
+ 
+  height:730px;
+  background: url('https://i.pinimg.com/1200x/95/ac/01/95ac01d48b03f931f2f7edb5ffd949fe.jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content {
+
+  width: 100%;
+  height: 100%;
+
+  /* dark transparent overlay for contrast without hiding the photo */
+  background-color: rgba(46, 45, 45, 0.575);
+  padding: 0;               /* padding handled by inner text spacing */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 60px;
+  letter-spacing: 2px;
+  color: #fff;              /* make headline stand out on overlay */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.lux-btn {
+  padding: 12px 35px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.lux-btn:hover {
+  background-color: #8b6f3d;
+  border-color: #8b6f3d;
+}
+
+
+.featured {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+
+
+/* Ensure carousel images display at a uniform height and crop if needed */
+.carousel-inner {
+  /* optional: fix overall max height to avoid layout shift */
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;              /* already added by w-100 class but reinforce */
+  height: 600px;            /* fixed height for consistency */
+  object-fit: cover;        /* crop to fill container without distortion */
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+}
+
+.product-card h5 {
+  margin-top: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+
+.about {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 20px auto;
+  font-size: 16px;
+}
+
+
+.footer {
+  padding: 30px;
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+}
+/* ===== MODERN CLOTHING IMPACT SECTION ===== */
+.modern-fashion-impact {
+  padding: 100px 20px;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+/* Optional subtle floating gold highlights */
+.modern-fashion-impact::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(191,160,84,0.3) 0%, transparent 70%);
+  top: -50px;
+  left: -50px;
+}
+
+.modern-fashion-impact::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(191,160,84,0.2) 0%, transparent 80%);
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Cinematic Title */
+.impact-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 50px;
+  color: #331301;
+  position: relative;
+}
+
+/* Elegant gold underline for title */
+.impact-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 20px auto 0;
+  background-color: #bfa054;
+  border-radius: 2px;
+  box-shadow: 0 0 12px rgba(191,160,84,0.5);
+}
+
+/* Paragraph styling */
+.impact-text {
+  font-size: 20px;
+  line-height: 2;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  color: #382701;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(191,160,84,0.1);
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Hover subtle effect */
+.impact-text:hover {
+  transform: translateY(-3px);
+  color: #000;
+}
+.product-card img {
+  width: 330px;              /* already added by w-100 class but reinforce */
+  height: 410px;            /* fixed height for consistency */
+  object-fit: cover;        /* crop to fill container without distortion */
+}

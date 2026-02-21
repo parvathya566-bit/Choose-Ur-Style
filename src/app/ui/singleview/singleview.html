@@ -1,0 +1,30 @@
+<div class="card-container">
+  <div class="card">
+    <img [src]="singleproduct?.image" alt="Product Image" class="product-img"/>
+    
+    <div class="product-details">
+      <h2>{{singleproduct?.title}}</h2>
+      <div class="price-tag">{{singleproduct?.price}}</div>
+      
+      <p class="product-description">Premium quality fabric with exceptional craftsmanship. Perfect for any occasion.</p>
+      
+      <div class="product-meta">
+        <div class="meta-item">
+          <span class="meta-label">Availability</span>
+          <span class="meta-value">In Stock</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Material</span>
+          <span class="meta-value">Premium Blend</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Care</span>
+          <span class="meta-value">Dry Clean Only</span>
+        </div>
+      </div>
+      
+      <div class="action-buttons">
+        <button class="btn btn-primary">Add to Bag</button>
+        <button class="btn btn-secondary">Add to Wishlist</button>
+      </div>
+    </div>

@@ -1,0 +1,120 @@
+/* ===== ABOUT MODERN INDIA SECTION ===== */
+.about-modern-india {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #fff8f0 0%, #fdf7f2 100%);
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating gold orbs for luxury/fantasy vibe */
+.about-modern-india::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(191,160,84,0.25) 0%, transparent 70%);
+  top: -50px;
+  left: -50px;
+  animation: float 10s ease-in-out infinite alternate;
+}
+
+.about-modern-india::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(191,160,84,0.2) 0%, transparent 80%);
+  bottom: -100px;
+  right: -100px;
+  animation: float 12s ease-in-out infinite alternate-reverse;
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(20px, 20px); }
+  100% { transform: translate(0, 0); }
+}
+
+/* Main title */
+.about-modern-india h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #000;
+  text-shadow: 1px 1px 6px rgba(191,160,84,0.3);
+}
+
+/* Section subtitle */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 52px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  color: #000;
+  position: relative;
+  text-align: left;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin: 20px 0 0 0;
+  background-color: #bfa054; /* soft gold */
+  border-radius: 2px;
+  box-shadow: 0 0 15px rgba(191,160,84,0.5);
+}
+
+/* Paragraph text */
+.section-text {
+  font-size: 20px;
+  line-height: 2;
+  color: #333;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(191,160,84,0.1);
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.section-text:hover {
+  transform: translateY(-2px);
+  color: #000;
+}
+
+/* Image styling */
+.about-img {
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-modern-india h1 {
+    font-size: 36px;
+  }
+  .section-title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .section-text {
+    font-size: 18px;
+    text-align: center;
+  }
+}

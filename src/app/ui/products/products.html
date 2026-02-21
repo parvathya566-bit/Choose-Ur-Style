@@ -1,0 +1,14 @@
+<h1>Collections</h1>
+<div class="card-group">
+    @for (item of products; track item.id){
+
+  <div class="card">
+    <img src="{{item.image}}" class="card-img-top" alt="{{item.title}}">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text price">{{item.price}}</p>
+      <a [routerLink]="['/singleview',item.id]">View Details</a>
+    </div>
+  </div>
+}
+</div>
