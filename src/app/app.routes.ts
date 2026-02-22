@@ -10,5 +10,5 @@ export const routes: Routes = [
     {path:'about',component:About},
     {path:'contact',component:Contact},
     {path:'products',component:Products},
-     {path:'singleview/:titileid',component:Singleview}
+     {path:'singleview/:id',component:Singleview}
 ];
