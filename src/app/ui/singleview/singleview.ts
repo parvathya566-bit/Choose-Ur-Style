@@ -12,7 +12,7 @@ export class Singleview {
    singleproduct:any;
   constructor(private route: ActivatedRoute, private apiservice:Apiservice,private cdr:ChangeDetectorRef){}
   ngOnInit(){//parameter mapping
-    const productid=this.route.snapshot.paramMap.get('id')
+    const productid=this.route.snapshot.paramMap.get('titileid')
   if(productid){this.apiservice.getsingleProducts(productid).subscribe((data)=>{
     this.singleproduct=data;
     this.cdr.detectChanges();
